@@ -89,7 +89,6 @@ describe('ContactListComponent', () => {
     const deleteAllContacts = fixture.debugElement.query(
       By.css('[mat-raised-button]')
     );
-    const addNewContact = fixture.debugElement.query(By.css('.add-fab'));
     tick();
 
     expect(table).not.toBeNull();
@@ -97,14 +96,5 @@ describe('ContactListComponent', () => {
     expect(deleteAllContacts.nativeElement.innerText).toContain(
       'Delete All Contacts'
     );
-    // expect(addNewContact).not.toBeNull();
   }));
-
-  // it('should click on edit button and change to edit page', fakeAsync(() => {
-  //   const buttonEdit = fixture.debugElement.query(By.css('edit-icon'));
-  //   buttonEdit.triggerEventHandler('click', { button: 0 });
-  //   flush();
-  //   fixture.detectChanges();
-  //   expect(location.path()).toEqual('/edit/1');
-  // }));
 });
