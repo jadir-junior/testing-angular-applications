@@ -22,7 +22,7 @@ import { PhoneNumberPipe } from '../shared/phone-number/phone-number-pipe';
 
 import { ContactListComponent } from './contact-list.component';
 
-fdescribe('ContactListComponent', () => {
+describe('ContactListComponent', () => {
   let component: ContactListComponent;
   let fixture: ComponentFixture<ContactListComponent>;
   let router: Router;
